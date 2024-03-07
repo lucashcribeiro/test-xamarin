@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:debug="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows" x:Class="Traveler.App">
+    <Application.Resources>
+        <OnPlatform x:TypeArguments="x:String" x:Key="FontAwesomeRegular">
+            <On Platform="iOS" Value="FontAwesome5Free-Regular" />
+            <On Platform="Android" Value="fa-regular.otf#Regular" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="FontAwesomeSolid">
+            <On Platform="iOS" Value="FontAwesome5Free-Solid" />
+            <On Platform="Android" Value="fa-solid.otf#Solid" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="LatoBlack">
+            <On Platform="iOS" Value="Lato-Black" />
+            <On Platform="Android" Value="Lato-Black.ttf#Regular" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="LatoBold">
+            <On Platform="iOS" Value="Lato-Bold" />
+            <On Platform="Android" Value="Lato-Bold.ttf#Bold" />
+        </OnPlatform>
+        <OnPlatform x:TypeArguments="x:String" x:Key="LatoRegular">
+            <On Platform="iOS" Value="Lato-Regular" />
+            <On Platform="Android" Value="Lato-Regular.ttf#Regular" />
+        </OnPlatform>
+
+        <Style ApplyToDerivedTypes="True" TargetType="ContentPage">
+            <Setter Property="debug:DebugRainbow.ShowColors" Value="false"/>
+            <Setter Property="debug:DebugRainbow.ShowGrid" Value="true" />
+            <Setter Property="debug:DebugRainbow.HorizontalItemSize" Value="20" />
+            <Setter Property="debug:DebugRainbow.VerticalItemSize" Value="20" />
+            <Setter Property="debug:DebugRainbow.MajorGridLineColor" Value="Red" />
+            <Setter Property="debug:DebugRainbow.MajorGridLineInterval" Value="8" />
+            <Setter Property="debug:DebugRainbow.MajorGridLineOpacity" Value=".5" />
+            <Setter Property="debug:DebugRainbow.MajorGridLineWidth" Value="6" />
+            <Setter Property="debug:DebugRainbow.GridLineColor" Value="Red" />
+            <Setter Property="debug:DebugRainbow.GridLineOpacity" Value=".5" />
+            <Setter Property="debug:DebugRainbow.GridLineWidth" Value="1" />
+            <Setter Property="debug:DebugRainbow.GridPadding" Value="0" />
+            <Setter Property="debug:DebugRainbow.GridOrigin" Value="Center" />
+            <Setter Property="debug:DebugRainbow.MakeGridRainbows" Value="false" />
+            <Setter Property="debug:DebugRainbow.Inverse" Value="false" />
+        </Style>
+
+
+    </Application.Resources>
+</Application>
